@@ -1,13 +1,13 @@
-﻿namespace practika2.cSharp
+namespace practika2.cSharp
 {
     internal class Program
     {
         static void Main()
         {
 
-            Actions();
+            Действие();
         }
-        static void GuessNum()
+        static void УгадайЧисло()
         {
             Console.Title = "Угадай число";
             Random rand = new Random();
@@ -40,7 +40,7 @@
             Console.ReadKey();
         }
 
-        static void MultiTab()
+        static void ТаблицаУмножения()
         {
             for (int i = 1; i <= 10; i++)
             {
@@ -51,7 +51,7 @@
                 Console.WriteLine();
             }
         }
-        static void Delitel()
+        static void ДелительЧисла()
         {
             int num = Convert.ToInt32(Console.ReadLine());
             int num2 = 0;
@@ -65,28 +65,28 @@
             Console.WriteLine();
         }
 
-        static void Actions()
+        static void Действие()
         {
             while (true)
             {
-                Console.WriteLine("1) Игра угадай число");
+                Console.WriteLine("1) Угадай число");
                 Console.WriteLine("2) Таблица умножения");
-                Console.WriteLine("3) Найти делители числа");
+                Console.WriteLine("3) Делители числа");
                 Console.WriteLine("4) Выйти из программы");
                 Console.WriteLine("Введите действие: ");
                 int action = Convert.ToInt32(Console.ReadLine());
                 if (action == 1)
                 {
-                    GuessNum();
+                    УгадайЧисло();
                 }
                 else if (action == 2)
                 {
-                    MultiTab();
+                    ТаблицаУмножения();
                 }
                 else if (action == 3)
                 {
                     Console.WriteLine("Введите число: ");
-                    Delitel();
+                    ДелительЧисла();
                 }
                 else if (action == 4)
                 {
